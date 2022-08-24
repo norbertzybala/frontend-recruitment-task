@@ -6,3 +6,16 @@
 body {
     font-family: $font-family;
 }
+
+.container {
+    max-width: 1440px;
+    margin: 20px;
+
+    @include min-width(verySmall) {
+        margin: 20px 40px;
+    }
+
+    @include min-width(medium) {
+        margin: 0 auto;
+    }
+}
