@@ -1,0 +1,17 @@
+@mixin min-width($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+@mixin min-width-and-orientation-landscape($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin orientation-landscape() {
+    @media screen and (orientation: landscape) {
+        @content;
+    }
+}
