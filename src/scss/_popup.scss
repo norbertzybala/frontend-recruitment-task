@@ -6,6 +6,7 @@
     bottom: 0;
     background-color: rgba(#121212, 0.5);
     display: block;
+    z-index: 1;
 
     &--hide {
         display: none;
@@ -20,6 +21,7 @@
     background-color: #fff;
     width: 80%;
     animation: show-alert 0.4s;
+    z-index: 2;
 
     @include min-width(medium) {
         width: 920px;
@@ -98,6 +100,11 @@
         color: $primary-color;
         letter-spacing: 2px;
         transition: 0.3s;
+        visibility: visible;
+
+        &--hide {
+            visibility: hidden;
+        }
 
         &:hover {
             background-color: $primary-color;

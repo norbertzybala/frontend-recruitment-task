@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="dist/main.css">
-    <script src="dist/all.js" defer></script>
+    <script src="dist/all.js" type="module" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
@@ -31,15 +31,15 @@
     </div>
 
     <div class="alert-overlay alert-overlay--hide">
-        <div class="alert alert--hide">
+        <div class="alert">
             <div class="alert__wrapper">
                 <div class="alert__close"></div>
                 <h1 class="alert__title">Alert!</h1>
                 <div class="alert__content">
-                    <p class="alert__description"> You have clicked <span><strong>X times</strong></span> to related
+                    <p class="alert__description"> You have clicked <strong><span class="alert__value">X</span> times</strong> to related
                         button.
                     </p>
-                    <button class="alert__button">Reset</button>
+                    <button class="alert__button alert__button--hide">Reset</button>
                 </div>
             </div>
         </div>
